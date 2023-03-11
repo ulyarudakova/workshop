@@ -6,5 +6,4 @@ with open('task_3.csv', 'w', encoding='utf-8') as file:
         writer = csv.DictWriter(file, fieldnames=["Id", "Title", "Price"], lineterminator="\r")
         writer.writeheader()
         for row in reader:
-            dot = (row["Id"], row["Title"], row["Price"])
             writer.writerow({"Id": row["Id"], "Title": row["Title"], "Price": row["Price"]})
