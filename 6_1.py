@@ -1,10 +1,10 @@
 import time
-import sys
 
 while True:
-    a = int(input('Введите число: '))
-    if a > 0:
-        time.sleep(a)
-        print(input('Введите число: '))
+    num = int(input("Введите число: "))
+    if num < 0:
+        break
     else:
-        sys.exit()
+        time.sleep(num)
+
+print("Выход из программы")
